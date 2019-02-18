@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8" />
+          <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Notes</title>
+          <style type="text/css">
+               body {
+                    background-color: #1995ad;
+                    margin: 0;
+                    padding: 0;
+                    font-family: 'Lora', serif;
+                    }
+               div {
+                    width: 600px;
+                    margin: 5em auto;
+                    padding: 50px;
+                    background-color: #54565b;
+                    border-radius: 1em;
+                    }
+
+          /* This gives styling if your viewing on phone or anything below 700px */
+
+               @media (max-width: 700px) {
+                    body {
+                         background-color: #f7ef6a;
+                         }
+                    div {
+                         width: auto;
+                         margin: 0 auto;
+                         border-radius: 0;
+                         padding: 1em;
+                         }
+                                        }
+          </style>
+     </head>
+     <body>
+          <div>
+
+          <!--<hr> tag is for creating a horizontal rule to seperate parts of your page xhtml uses <hr /> tag instead-->
+
+          <h1>Kim's HTML Coding Notes</h1>
+          <hr>
+
+          <!--PARAGRAPH TAGS GIVE EACH P TAG A NEW LINE ON THE SITE-->
+          <!--<strong> TAg WILL BOLD TEXT ITS WRAPPED AROUND <b>  will also do the same function-->
+
+          <h4>Command + / ( also &lt;strong&gt; )</h4>
+          <p>Creates the line the <strong>cursor is in</strong> or any text highlighted into a comment note</p>
+          <hr>
+
+          <!--<em>  tag is used to italicize text its wrapped around <i> tag will do the same-->
+
+          <h4>type html and hit tab button (also &lt;em&gt;)</h4>
+          <p>populates the html <em>boilerplate</em></p>
+          <hr>
+
+          <!--<ins> tag will underline the text it surrounds. also used is the <u>tag-->
+
+          <h4>type your code like "ul" and push tab ( also &lt;ins&gt; )</h4>
+          <p>creates the <ins>correct open and closing brackets</ins> for the tag</p>
+          <hr>
+
+          <!--<sup> tag will create text that is higher up or superscript from the line of the rest of the surrounding text-->
+
+          <h4>command + shift + D ( also &lt;sup&gt; )</h4>
+          <p>copies the line <sup>above the cursor</sup> and duplicates it below</p>
+          <hr>
+
+          <!--<sub> tag will create text that is lower or subscript from the line of the rest of the surrounding text-->
+
+          <h4>type lorem and hit tab ( also &lt;sub&gt; )</h4>
+          <p>creates a paragraph of <sub>lorem ipsum text</sub> for placeholder</p>
+          <hr>
+
+          <!--<del> tag short for deleted will cross out the text it surrounds an outdated tag is <strike> if seen in others code-->
+
+          <h4>command + click in multiple lines and areas in your file ( also &lt;del&gt; )</h4>
+          <p>the cursor is in all the places you clicked. Then start typing and it types the same thing <del>in every place</del>. so ie. &lt;img width="50" can be added to all the images lines at the same time.</p>
+          <hr>
+
+          <!--You can add formatting to your unordered list items UNORDERED LISTS-->
+
+          <h4>Unordered List</h4>
+          <ul>
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ul>
+          <hr>
+
+          <!--ORDERED LISTS-->
+
+          <h4>Ordered Lists</h4>
+          <ol>
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <hr>
+
+          <!--you can state what number the list should start with-->
+
+          <h4>Ordered list starting with 10</h4>
+          <ol start="10">
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <hr>
+
+          <!--you can reverse the countdown the list should start with big number to small-->
+
+          <h4>Reversed Ordered list</h4>
+          <ol reversed>
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <hr>
+
+          <!--you can specify 1 (for numbered beginning 1), A (for capital letters beginning with A), I ( for capital roman numberals), i (for lowercase roman numberals), a (for lowercase letters beginning with a) the list should start with-->
+
+          <h4>Ordered Lists with different numbers / letters</h4>
+          <ol type="A">
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <ol type="I">
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <ol type="a">
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <ol type="i">
+               <li><strong>Pat</strong></li>
+               <li><em>Kim</em></li>
+               <li><del>Donnie</del></li>
+               <li><ins>Emily</ins></li>
+          </ol>
+          <hr>
+
+          <!--Nested List-->
+
+          <h4>Nested Lists</h4>
+          <ol>
+               <li>Red</li>
+               <li>Orange</li>
+               <li>Yellow
+                    <ul>
+                         <li>Sunflower</li>
+                         <li>Banana
+                              <ol>
+                                   <li>Frozen Banana</li>
+                                   <li>Non-Frozen Banana</li>
+                              </ol>
+                         </li>
+                    </ul>
+               </li>
+          </ol>
+          <hr>
+
+          <h5>Things I've Learned</h5>
+          <h6>Internet Basics</h6>
+          <ol>
+               <li>HTTP Requests</li>
+               <li>IP Address</li>
+               <li>Servers</li>
+          </ol>
+          <h6>HTML</h6>
+          <ul>
+               <li>Stands for <strong>Hyper Text Markup Language</strong></li>
+               <li>Lots of Tags
+                    <ul>
+                         <li>Boilerplate
+                              <ol>
+                                   <li>Doctype</li>
+                                   <li>HTML</li>
+                                   <li>head</li>
+                                   <li>Body</li>
+                              </ol>
+                         </li>
+                         <li>Headings</li>
+                         <li>Paragraph</li>
+                         <li><em>em</em></li>
+                         <li><strong>strong</strong></li>
+                    </ul>
+               </li>
+          </ul>
+          <hr>
+
+          <!--add an image with file saved locally with page-->
+
+          <h4>add an image with file saved locally with page</h4>
+          <img src="homer.png">
+          <p>Homer Simpson Image example</p>
+          <hr>
+
+          <!--change the size of an image the 100 here means 100 pixels and it will be an even size down-->
+
+          <img src="homer.png" width="100">
+          <p>image with size change</p>
+          <hr>
+
+          <!--change the size of an image the 100 here means 100 pixels but here we change the width as well and it squishes if ever needed-->
+
+          <img src="homer.png" width="100" height="100">
+          <p>image with width and height change</p>
+          <hr>
+
+          <!--change the alignment of the image - align left of any text that comes after it. align right aligns the image to the right of the page-->
+
+          <img src="homer.png" width="100" height="100" align="left">
+          <p>image with align left</p><br><br><br>
+          <hr>
+
+          <!--change the alignment of the image - align left of any text that comes after it. align right aligns the image to the right of the page-->
+
+          <img src="homer.png" width="100" height="100" align="right">
+          <p>image with align right</p><br><br><br>
+          <hr>
+
+          <!--LINK TO AN IMAGE DIRECTLY ON THE INTERNET this is called hot linking and can slow your page down and also the site that owns the image and may upset them they can also move or change that link or image and it will not work on your page its better to download an image and access it on yor own server-->
+
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png" width="100" height="100" align="left">
+          <p>image link directly on the internet</p><br><br><br>
+          <hr>
+
+          <!--FORMS-->
+
+          <h4>FORMS</h4>
+
+          <!--in order for your submit button to send data to a site use the action after form-->
+
+          <!--ACTION - the url to send form data to or where the form sends data to
+          METHOD - the type of HTTP request or what HTTP method (get/post)-->
+
+          <!--<input> has attributes: text, button, checkbox, color, date, datetime, datetime-local, email, & file-->
+
+          <!--<input type="text or date or color or file or checkbox">-->
+
+          <img src="form-tag.png" width="400">
+          <img src="input-tag.png" width="400">
+          <hr><hr>
+
+          <form action="http://wikipedia.org" method="GET" >
+               <input type="text" placeholder="username">
+               <input type="password" placeholder="password">
+               <input type="submit">
+          </form>
+          <form>
+               <input name="username" type="text" placeholder="username">
+               <input name="password" type="password" placeholder="password">
+               <input type="submit">
+          </form>   
+          <hr>
+
+          <form action="http://www.kimpascoedesign.com">
+               <p>Username: <input type="text"></p>
+               <hr>
+
+               <img src="simple-form.png" width="400">
+               <hr>
+
+               <h1>Login</h1>
+               <input type="text">
+               <input type="color">
+               <input type="radio">
+               <input type="password">
+               <hr>
+
+               <h1>Login</h1>
+               <input type="text" placeholder="username">
+               <input type="password" placeholder="password">
+               <button>Submit</button>
+               <input type="submit">
+               <hr>
+
+               <input type="text" placeholder="username">
+               <input type="passowrd" placeholder="passowrd">
+               <input type="submit">
+          </form>
+          <hr><hr><hr>
+
+          <!--  The <label> lets us add captions to individual elements in our form. Used rather than plain text and important for accesibility. Their screen reading software will look for label tags to know what each part of the form corresponds to. Nice to add a caption as well explaining what each part of the form is used for. -->
+
+          <h1>Labels</h1>
+          <img src="labels.png" width="400"><br>
+
+          <form action="http://www.wikipedia.org">
+
+               <label>
+                    Username:
+                    <input type="text" placeholder="username">
+               </label>
+
+               <label>
+                    Password:
+                    <input type="password" placeholde="password">
+               </label>
+
+               <input type="submit">
+                              
+          </form>
+          <hr> 
+
+          <!-- moved input tags so they are seperate from the lablels. no longer nested inside one another. in the below example we will connect them. for software or those who are visually impaired they are not connected in the above format. As long as the "for" label name equals the input id "name" then screenreaders know that they are connected-->
+
+          <form action="http://www.wikipedia.org">
+
+               <label for="username">Username:</label>
+               <input id="username" type="text" placeholder="username">
+
+               <label for="password" >Password:</label>
+               <input id="password" type="password" placeholder="password">
+
+               <input type="submit">
+
+          </form>
+          <hr>
+
+          <img src="form-validations.png" width="400">
+
+          <!-- "Required" is a boolean attribute. don't have to write = True. The fact that its there means its required. if i push submit and dont have this field completed Google Chrome will tell me that it is required. Note not all browsers will do this. If I fill that in and hit submit then it forwards me to wikipedia. This is a presence validation, it makes sure that something is there because its required. if i click submit with no entires it will warn to complete username. if i just complete username and not password it will then error and say complete password. if both are completed and i hit submit than it moves on to wikipedia site -->
+
+          <form action="http://www.wikipedia.org">
+               <label for="username">Username:</label>
+               <input id="username" type="text" placeholder="username" required>
+               <label for="password" >Password:</label>
+               <input id="password" type="password" placeholder="password" required>
+               <input type="submit">
+          </form>
+          <hr>
+
+          <!-- data type of validation. format of data. make sure that an email actually looks like an email with correct format.  -->
+
+          <form action="http://www.wikipedia.org">
+               <label for="username">Email:</label>
+               <input id="username" type="email" placeholder="username" required>
+               <label for="password" >Password:</label>
+               <input id="password" type="password" placeholder="password" required>
+               <input type="submit">
+          </form>
+          <hr>
+
+
+          <!--set a default username  in this example the user has to remove the text your username and delete it on the form and then type in their info-->
+
+          <h4>set a default username</h4>
+          <p>Username: <input type="text" value="your username"></p>
+          <hr>
+
+          <!--set a username that gives the user a hint at what to type in the box. still puts your username in the box but when you click in the box it disappears-->
+
+          <form>
+               <h4>set a username hint that disappears</h4>
+               <p>Username: <input type="text" placeholder="your username"></p>
+          </form>
+
+          <!--Checkbox-->
+
+          <p>Stay logged in: <input type="checkbox"></p>
+          <hr>
+
+          <!--Checkbox selected by default-->
+
+          <p>Stay logged in: <input type="checkbox" checked></p>
+          <hr>
+
+          <!--Radio Button that you can select as many as you want since they don't have a name-->
+
+          <h4>you can select multiple choice here</h4>
+          <p>Under 18: <input type="radio"></p>
+          <p>Over 18: <input type="radio"></p>
+          <hr>
+
+          <!--Radio Button with each set of radial buttons you can only set one of them in this named section-->
+
+          <h4>you can only make one choice in this named input</h4>
+          <p>Under 18: <input type="radio" name="age"></p>
+          <p>Over 18: <input type="radio" name="age"></p>
+          <hr>
+
+          <!--SELECTIONS (Pizza is the default at the top here because its the first line of the options )-->
+
+          <h4>Selections</h4>
+          <p>Favorite food:
+               <select>
+                    <option>Pizza</option>
+                    <option>Ice Cream</option>
+                    <option>Sandwiches</option>
+               </select>
+          </p>
+          <hr>
+
+          <!--SELECTIONS (here we change which one of the selections appears as the default ie Ice Cream)-->
+
+          <h4>Selections with designated default option showing</h4>
+          <p>Favorite food:
+               <select>
+                    <option>Pizza</option>
+                    <option selected>Ice Cream</option>
+                    <option>Sandwiches</option>
+               </select>
+          </p>
+          <hr>
+
+          <!--SUBMIT-->
+
+          <h4>Submit</h4>
+          <p><input type="submit"></p>
+          <hr>
+
+          <h4>Click me text instead of Submit Text</h4>
+          <p><input type="submit" value="Click me!"></p>
+          <hr>
+
+          <!--Make a button-->
+
+          <h4>How to make a button</h4>
+          <button>Make Me A Button Here</button>
+          <hr>
+
+          <!-- DROPDOWNS & RADIO BUTTONS -->
+
+          <H4>Dropdowns & Radio Buttons</H4>
+
+          <!-- If a button is the last thing in a form it will actually submit the form. It doesnt have to be a Submit button to function this way. -->
+
+          <p>Do you prefer cats or dogs?</p>             
+          <form>
+               <label for="dogs">Dogs:</label>
+               <input name="petChoice" id="dogs" type="radio" value="DOGS">
+               <label for="cats">Cats:</label>
+               <input name="petChoice" id="cats" type="radio" value="CATS">
+               <button>Go!</button>
+          </form> 
+          <hr>                 
+                    
+          <!-- The select tag lets us create nice drop down menus -->
+
+          <form>
+               <label for="dogs">Dogs: </label>
+               <input name="petChoice" id="dogs" type="radio" value="DOGS">
+               <label for="cats">Cats:</label>
+               <input name="petChoice" id="cats" type="radio" value="CATS">
+               <p>What's your favorite color?</p>
+               <select name="color">
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Yellow</option>
+               </select>
+               <button>Go!</button>
+          </form>
+          <hr>
+
+          <!-- use the value attribute to choose the emoticon selection in the drop down but what it sends is  the word happy, sad, or neutral -->
+
+          <p>Do you prefer cats or dogs?</p>
+          <form>
+               <label for="dogs">Dogs: </label>
+               <input name="petChoice" id="dogs" type="radio" value="DOGS">
+               <label for="cats">Cats:</label>
+               <input name="petChoice" id="cats" type="radio" value="CATS">
+               <p>What's your current mood?</p>
+
+               <select name="mood">
+                    <option value="happy">:)</option>
+                    <option value="neutral">:|</option>
+                    <option value="sad">:(</option>
+               </select>
+               <button>Go!</button>
+          </form>
+          <hr>
+
+          <!-- textarea tag is a nice way to put inputs that are more than one line. its a tag just like select so its not an input with a type, its actually a seperate type of form control -->
+
+          <h4>&lt;textarea&gt; Tag</h4>
+
+          <form>
+               <textarea name="paragraph" rows="10" cols="10"></textarea>
+               <button>Make it rain</button>
+          </form>
+
+          <!--TABLES <tr> is used for each row of data & <td> is used for each cell of data & <thead> is for table heading section <th> is for table heading sections <th> aligns items centered-->
+
+          <h4><ins>TABLES</ins></h4>
+          <table>
+               <thead>
+                    <tr>
+                         <th>Name</th>
+                         <th>Favorite <br>Color</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <td>Pat</td>
+                         <td>Black</td>
+                    </tr>
+                    <tr>
+                         <td>Kim</td>
+                         <td>Teal</td>
+                    </tr>
+                    <tr>
+                         <td>Donnie</td>
+                         <td>Blue</td>
+                    </tr>
+                    <tr>
+                         <td>Emily</td>
+                         <td>Pink</td>
+                    </tr>
+               </tbody>
+          </table>
+          <hr>
+
+          <!--use css for borders normally though-->
+
+          <table border="1">
+               <thead>
+                    <tr>
+                         <th>Name</th>
+                         <th>Age</th>
+                         <th>Breed</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <td>Rusty</td>
+                         <td>2</td>
+                         <td>Mutt</td>
+                    </tr>
+                    <tr>
+                         <td>Wyatt</td>
+                         <td>13</td>
+                         <td>Golden</td>
+                    </tr>
+               </tbody>
+          </table>
+          <hr>
+
+          <h1>First Gen Pokemon Chart</h1>
+
+          <!--Again use borders normally in css not html, also the img width should normally be done with css instead of here in html-done for demo purposes here-->
+
+          <table border="1">
+               <thead>
+                    <tr>
+                         <th>Image</th>
+                         <th>Name</th>
+                         <th>Type</th>
+                         <th>Evolves Into</th>
+                    </tr>
+               </thead>
+               <tbody>
+          <!--Bulbasaur-->
+               <tr>
+                    <td>
+                         <img width="50" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png">
+                    </td>
+                    <td>Bulbasaur</td>
+                    <td>Grass/Poison</td>
+                    <td>
+                         <a href="http://pokemon.wikia.com/wiki/Ivysaur ">Ivysaur</a>
+                    </td>
+               </tr>
+          <!--Charmander-->
+               <tr>
+                    <td>
+                         <img width="50" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png">
+                    </td>
+                    <td>Charmander</td>
+                    <td>Fire</td>
+                    <td>
+                         <a href="http://pokemon.wikia.com/wiki/Charmeleon ">Charmeleon</a>
+                    </td>
+               </tr>
+          <!--Squirtle-->
+               <tr>
+                    <td>
+                         <img width="50" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png">
+                    </td>
+                    <td>Squirtle</td>
+                    <td>Water</td>
+                    <td>
+                         <a href="http://pokemon.wikia.com/wiki/Wartortle ">Wartortle</a>
+                    </td>
+               </tr>
+               </tbody>
+          </table>
+          <hr>
+
+          <!--absolute links or LINKING FROM ONE PAGE TO ANOTHER use this when linking to someone elses site-->
+
+          <h4>CREATING A LINK TO AN EXTERNAL WEBPAGE by clicking on text link</h4>
+          <p><a href="http://www.google.com">Click here to go to google.com</a></p>
+          <p>Make sure to follow me on <a href="https://instagram.com/dogsofinstagram/?hl=en">Instagram</a></p>
+          <hr>
+
+          <h4>CREATING A LINK TO AN EXTERNAL WEBPAGE by clicking on an image</h4>
+          p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <hr>
+
+          <!-- relative links or linking to pages within your site - helloworld.html is a page in the same folder as the notes.html file so its a relative link as in relative to your site files. use this when linking to your own site -->
+
+          <h4>RELATIVE LINKS or linking within your site</h4>
+          <p><a href="helloworld.html">Hello world!</a></p>
+          <hr>
+
+          <!--anchor links or linking within a page BACK TO TOP AT BOTTOM OF PAGE-->
+
+          <h4>Anchor links or linking within a page</h4>
+          <p id="top"><a href="http://www.google.com">Click here to go to google.com</a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="helloworld.html">Hello world!</a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="#top">Back to top of this section</a></p>
+          <hr>
+
+          <!--anchor links or linking within a page BACK TO TOP AT BOTTOM OF PAGE-->
+
+          <h4>Anchor links or linking within a page</h4>
+          <p><a href="http://www.google.com">Click here to go to google.com</a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="helloworld.html">Hello world!</a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p id="thirdhomer"><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="http://www.wikipedia.org"><img src="homer.png" width="50"></a></p>
+          <p><a href="#top">Back to top of this section</a></p>
+          <p><a href="#thirdhomer">Go to third homer</a></p>
+          <hr>
+
+          <!--HTML ENTITIES-->
+
+          <h4>HTML ENTITIES</h4>
+          <p>&lt;a href="http://www.google.com"&gt;  &copy;  &cent;  &amp; &pound; &yen; &euro;  &reg;  a&#768; a&#769; a&#770; a&#771; o&#768; o&#769;  0&#770; 0&#771;</p>
+          <hr>
+
+          <!--iFrames-->
+
+          <h4>iFrames to an external site</h4>
+          <iframe src="http://www.wzzm13.com"></iframe>
+          <hr>
+
+          <h4>iFrame to an internal page on your site</h4>
+
+          <!--to get rid of the frame border on media-->
+
+          <iframe src="helloworld.html" frameborder="1"></iframe>
+          <hr>
+
+                    <!--on youtube use the Embed link by the share link-->
+
+          <h4>embedding other media or videos into your site</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eU-ZDMhokD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr>
+          </div>
+     </body>
+</html>
